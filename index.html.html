@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A. L. Hughes &amp; Co. — Solicitors &amp; Commissioners for Oaths | Streatham, South London</title>
+<meta name="description" content="A. L. Hughes &amp; Co. is a trusted firm of Solicitors in Streatham, South London, established in 1950. Specialists in Property Law, Conveyancing, Wills, Probate and Powers of Attorney. Regulated by the SRA.">
+<meta name="keywords" content="solicitors streatham, property law south london, conveyancing streatham, wills probate london, A L Hughes solicitors, commissioners for oaths">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══ RESET ═══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --navy:#0D1E3D; --navy-mid:#152540; --navy-light:#1D3361;
+  --gold:#C9A84C; --gold-light:#D9B85E; --gold-pale:rgba(201,168,76,0.13);
+  --white:#FFFDF8; --off-white:#FBF6EE; --stone:#F5EFE4;
+  --text-dark:#0F1923; --text-mid:#374151; --text-muted:#6B7280;
+  --border:#E8DFD0;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --r:14px; --ease:.22s ease;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);color:var(--text-dark);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;}
+
+/* ══ PRELOADER ══ */
+#preloader{
+  position:fixed;inset:0;z-index:9999;background:var(--navy);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;
+  transition:opacity 1s cubic-bezier(.4,0,.2,1), visibility 1s ease;
+}
+#preloader.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+.pre-logo{
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+  opacity:0;transform:translateY(12px);
+  animation:preLogoIn .7s cubic-bezier(.22,1,.36,1) .1s both;
+}
+@keyframes preLogoIn{to{opacity:1;transform:none;}}
+.pre-name{
+  font-family:var(--serif);font-size:30px;font-weight:600;
+  color:var(--white);letter-spacing:.02em;
+  opacity:0;animation:preLogoIn .6s ease .4s both;
+}
+.pre-sub{
+  font-family:var(--sans);font-size:10px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.32);
+  opacity:0;animation:preLogoIn .6s ease .55s both;
+}
+.pre-bar-wrap{
+  width:220px;height:2px;background:rgba(255,255,255,.1);
+  border-radius:2px;overflow:hidden;
+  opacity:0;animation:preLogoIn .4s ease .65s both;
+}
+.pre-bar-fill{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  border-radius:2px;
+  transition:width .12s linear;
+}
+
+/* ══ SCROLL PROGRESS ══ */
+#sprogress{position:fixed;top:0;left:0;right:0;height:2px;z-index:300;pointer-events:none;}
+#sprogress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .08s linear;}
+
+/* ══ CURSOR GLOW ══ */
+#cglow{pointer-events:none;position:fixed;z-index:100;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.065) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity .5s ease;will-change:transform;}
+
+/* ══ SCROLL REVEAL ══ */
+.reveal{
+  opacity:0;transform:translateY(40px);
+  transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);
+}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.rd1{transition-delay:.05s;}.rd2{transition-delay:.15s;}.rd3{transition-delay:.25s;}
+.rd4{transition-delay:.35s;}.rd5{transition-delay:.45s;}.rd6{transition-delay:.55s;}
+
+/* ══ NAV SCROLLED ══ */
+.nav.scrolled{background:rgba(13,30,61,1);box-shadow:0 4px 28px rgba(0,0,0,.22);border-bottom-color:rgba(201,168,76,.25);}
+
+/* ══ RIPPLE ══ */
+.btn{position:relative;overflow:hidden;}
+.ripple-el{position:absolute;border-radius:50%;background:rgba(255,255,255,.25);transform:scale(0);animation:ripple .55s linear;pointer-events:none;}
+@keyframes ripple{to{transform:scale(4);opacity:0;}}
+
+/* ══ IMG FADE IN ══ */
+.fi{opacity:0;transition:opacity 1s cubic-bezier(.22,1,.36,1);}
+.fi.loaded{opacity:1;}
+
+/* ══ CARD GOLD ACCENT ══ */
+.pcard{border-left:3px solid transparent;transition:transform .25s ease,box-shadow .25s ease,border-left-color .25s ease;}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(13,30,61,.1);border-left-color:var(--gold);}
+.wcard{border-left:3px solid transparent;transition:box-shadow .25s ease,border-left-color .25s ease;}
+.wcard:hover{box-shadow:0 8px 28px rgba(13,30,61,.07);border-left-color:var(--gold);}
+
+/* ═══ CONTAINER ═══ */
+.container{max-width:1180px;margin:0 auto;padding:0 48px;}
+section[id], div[id]{scroll-margin-top:72px;}
+
+/* ═══ EYEBROW PILLS ═══ */
+.pill-a{display:inline-flex;align-items:center;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;padding:5px 13px;border-radius:100px;}
+.pill-b{display:inline-flex;align-items:center;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;padding:5px 14px;border-radius:100px 100px 100px 0;}
+.pill-gold{background:var(--gold);color:var(--navy);}
+.pill-navy{background:var(--navy);color:var(--white);}
+.pill-outline{background:transparent;color:rgba(255,255,255,0.55);border:1px solid rgba(255,255,255,0.18);}
+.pill-lite{background:var(--white);color:var(--text-mid);border:1px solid var(--border);}
+
+/* ═══ BUTTONS ═══ */
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--sans);font-size:14px;font-weight:600;
+  padding:11px 26px;border-radius:100px;
+  cursor:pointer;border:none;transition:all var(--ease);white-space:nowrap;
+}
+.btn-gold{background:var(--gold);color:var(--navy);}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,168,76,.28);}
+.btn-outline-w{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35);}
+.btn-outline-w:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07);}
+.btn-card{background:var(--gold);color:var(--navy);font-size:13px;padding:9px 20px;}
+.btn-card:hover{background:var(--gold-light);}
+.btn-ghost{background:transparent;color:var(--text-mid);border:1.5px solid var(--border);font-size:13px;padding:9px 20px;}
+.btn-ghost:hover{border-color:var(--text-mid);}
+
+/* ═══════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  background:rgba(13,30,61,.96);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,168,76,.1);
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;padding:0 48px;
+  height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0;margin-left:0px;}
+.nav-logo-mark{
+  width:38px;height:38px;border-radius:8px;background:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);
+  flex-shrink:0;
+}
+.nav-logo-text{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--white);letter-spacing:.01em;line-height:1.1;}
+.nav-logo-sub{font-size:9.5px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.06em;text-transform:uppercase;}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{font-size:13.5px;font-weight:500;color:rgba(255,255,255,.72);transition:color var(--ease);}
+.nav-links a:hover{color:var(--white);}
+.nav-actions{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.nav-burger span{display:block;width:22px;height:2px;background:rgba(255,255,255,.8);border-radius:2px;transition:all .3s ease;}
+.nav-burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.nav-burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* mobile drawer */
+.nav-drawer{
+  position:fixed;top:64px;left:0;right:0;z-index:199;
+  background:var(--navy-mid);border-top:1px solid rgba(255,255,255,.06);
+  transform:translateY(-10px);opacity:0;pointer-events:none;
+  transition:transform .32s cubic-bezier(.4,0,.2,1), opacity .28s ease;
+}
+.nav-drawer.is-open{transform:translateY(0);opacity:1;pointer-events:all;}
+.nav-drawer a{
+  display:block;font-size:15px;font-weight:500;color:rgba(255,255,255,.78);
+  padding:14px 28px;border-bottom:1px solid rgba(255,255,255,.05);
+  transition:color var(--ease), background var(--ease);
+}
+.nav-drawer a:hover{background:rgba(255,255,255,.04);color:var(--white);}
+.nav-drawer .drawer-cta{padding:18px 28px 24px;border-top:1px solid rgba(255,255,255,.08);}
+.nav-drawer .drawer-cta .btn{width:100%;justify-content:center;}
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero{
+  min-height:100vh;background:var(--navy);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:120px 48px 80px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 55% at 50% 15%,rgba(201,168,76,.07) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-content{width:80%;max-width:944px;display:flex;flex-direction:column;align-items:center;}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.9);margin-bottom:22px;}
+.hero h1{font-family:var(--serif);font-size:60px;font-weight:600;line-height:1.06;color:var(--white);margin-bottom:22px;}
+.hero-sub{font-size:16px;line-height:1.75;color:rgba(255,255,255,.5);max-width:460px;margin-bottom:40px;}
+.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:64px;}
+.hero-imgs{display:grid;width:80%;max-width:944px;grid-template-columns:66fr 34fr;gap:14px;}
+.hero-img{border-radius:var(--r);overflow:hidden;background:var(--navy-light);}
+.hero-img img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s cubic-bezier(.22,1,.36,1);}
+.hero-img img.hi-visible{opacity:1;}
+.hero-img:first-child{height:320px;}
+.hero-img:last-child{height:320px;}
+
+/* Established badge */
+.hero-badge{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:100px;padding:8px 20px;
+  font-size:11.5px;color:rgba(255,255,255,.5);letter-spacing:.05em;
+}
+.hero-badge span{color:var(--gold);font-weight:600;}
+
+/* ═══════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════ */
+.about{padding:96px 0;background:var(--white);}
+.about-inner{text-align:center;width:80%;max-width:944px;margin:0 auto;}
+.about-inner h2{font-family:var(--serif);font-size:clamp(34px,4vw,52px);font-weight:600;color:var(--text-dark);margin-bottom:22px;line-height:1.1;margin-top:18px;}
+.about-text{font-size:16px;line-height:1.8;color:var(--text-mid);margin-bottom:52px;max-width:720px;margin-left:auto;margin-right:auto;}
+.about-text strong{color:var(--text-dark);font-weight:700;}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.astat{border-radius:var(--r);padding:10px 20px;display:flex;align-items:center;gap:16px;}
+.astat-gold{background:var(--gold);}
+.astat-dark1{background:var(--navy);}
+.astat-dark2{background:var(--navy-mid);}
+.astat-icon{width:48px;height:48px;border-radius:10px;flex-shrink:0;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;}
+.astat-icon svg{width:24px;height:24px;}
+.astat-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.65;margin-bottom:3px;}
+.astat-value{font-family:var(--serif);font-size:38px;font-weight:700;line-height:1;}
+.astat-gold .astat-label,.astat-gold .astat-value{color:var(--navy);}
+.astat-dark1 .astat-label,.astat-dark1 .astat-value,
+.astat-dark2 .astat-label,.astat-dark2 .astat-value{color:var(--white);}
+
+/* ═══════════════════════════════════════
+   PRACTICE AREAS
+═══════════════════════════════════════ */
+.practice{padding:96px 0;background:var(--off-white);}
+.practice-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:32px;gap:20px;}
+.practice-hdr h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,46px);font-weight:600;color:var(--text-dark);line-height:1.1;margin-top:14px;}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.pcard{
+  background:var(--white);border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--border);
+  transition:transform var(--ease),box-shadow var(--ease);
+  display:flex;flex-direction:column;
+}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(13,30,61,.1);}
+.pcard-icon-wrap{
+  height:120px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);
+}
+.pcard-icon-wrap svg{width:48px;height:48px;fill:var(--gold);opacity:.9;}
+.pcard-img{height:210px;overflow:hidden;background:var(--navy-light);}
+.pcard-img img{width:100%;height:100%;object-fit:cover;opacity:.8;transition:opacity .3s;}
+.pcard:hover .pcard-img img{opacity:.95;}
+.pcard-body{padding:24px;flex:1;display:flex;flex-direction:column;}
+.pcard-body h3{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text-dark);margin-bottom:9px;line-height:1.2;}
+.pcard-body p{font-size:13.5px;line-height:1.6;color:var(--text-muted);margin-bottom:14px;}
+.pcard-kp{list-style:none;margin-bottom:20px;flex:1;}
+.pcard-kp li{font-size:13px;color:var(--text-mid);padding:2px 0;display:flex;align-items:center;gap:9px;line-height:1.4;}
+.pcard-kp li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.pcard-actions{display:flex;gap:10px;}
+
+/* ═══════════════════════════════════════
+   WHY CHOOSE US
+═══════════════════════════════════════ */
+.why{padding:96px 0;background:var(--white);}
+.why-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:center;}
+.why-left h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:600;line-height:1.15;color:var(--text-dark);margin-bottom:18px;margin-top:14px;}
+.why-left p{font-size:14.5px;line-height:1.8;color:var(--text-muted);}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.wcard{background:var(--stone);border-radius:var(--r);padding:28px 24px;border:1px solid var(--border);transition:box-shadow var(--ease);}
+.wcard:hover{box-shadow:0 8px 28px rgba(13,30,61,.07);}
+.wcard-icon{margin-bottom:16px;}
+.wcard-icon svg{width:28px;height:28px;}
+.wcard h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;}
+.wcard p{font-size:13px;line-height:1.65;color:var(--text-muted);}
+
+/* ═══════════════════════════════════════
+   FEATURES / COSTS
+═══════════════════════════════════════ */
+.features{padding:96px 0;background:var(--off-white);}
+.features-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start;}
+.features-left{position:sticky;top:80px;}
+.features-left h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:600;line-height:1.15;color:var(--text-dark);margin-bottom:18px;margin-top:14px;}
+.features-left h2 em{font-style:normal;color:var(--gold);}
+.features-left p{font-size:14.5px;line-height:1.8;color:var(--text-muted);}
+.flist{display:flex;flex-direction:column;gap:8px;}
+.fitem{background:var(--white);border-radius:var(--r);padding:20px 24px;display:flex;align-items:flex-start;gap:18px;border:1px solid var(--border);transition:background var(--ease);cursor:default;}
+.fitem:hover{background:var(--stone);}
+.fitem-icon{width:40px;height:40px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.fitem-icon svg{width:26px;height:26px;stroke:var(--text-muted);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.fitem-text h4{font-size:14.5px;font-weight:600;color:var(--text-dark);margin-bottom:4px;}
+.fitem-text p{font-size:13px;line-height:1.6;color:var(--text-muted);}
+
+/* ═══════════════════════════════════════
+   TEAM
+═══════════════════════════════════════ */
+.team{padding:96px 0;background:var(--navy);}
+.team-hdr{text-align:center;margin-bottom:56px;}
+.team-hdr h2{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:600;color:var(--white);margin-bottom:14px;margin-top:18px;line-height:1.1;}
+.team-hdr p{font-size:15px;color:rgba(255,255,255,.45);max-width:500px;margin:0 auto;line-height:1.7;}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.tmem{}
+.tmem-avatar{
+  width:100%;height:240px;overflow:hidden;border-radius:var(--r);margin-bottom:16px;
+  background:var(--navy-light);display:flex;align-items:center;justify-content:center;
+}
+.tmem-initials{
+  font-family:var(--serif);font-size:52px;font-weight:600;
+  color:var(--gold);opacity:.7;
+}
+.tmem-role{font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px;}
+.tmem-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px;}
+.tmem-name{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--white);line-height:1.2;}
+.tmem-specs{font-size:12.5px;color:rgba(255,255,255,.38);line-height:1.5;}
+
+/* ═══════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════ */
+.testi{padding:96px 0;background:var(--off-white);overflow:hidden;}
+.testi-hdr{text-align:center;margin-bottom:40px;}
+.testi-hdr h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:600;color:var(--text-dark);margin-bottom:10px;margin-top:14px;}
+.testi-hdr p{font-size:14.5px;color:var(--text-muted);max-width:460px;margin:0 auto;}
+.testi-slider-wrap{overflow:hidden;cursor:grab;margin:0 -48px;padding:0 48px;}
+.testi-slider{display:flex;gap:18px;will-change:transform;backface-visibility:hidden;}
+.tcard{
+  flex:0 0 calc(47% - 9px);min-width:calc(47% - 9px);
+  background:var(--white);border-radius:var(--r);
+  padding:32px 28px;border:1px solid var(--border);
+  display:flex;flex-direction:column;gap:20px;
+}
+.tcard-stars{display:flex;gap:3px;}
+.tcard-stars svg{width:16px;height:16px;fill:var(--gold);}
+.tcard-quote{font-size:14.5px;line-height:1.75;color:var(--text-mid);font-style:italic;flex:1;}
+.tcard-author{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.tcard-info{}
+.tcard-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.tcard-title{font-size:12px;color:var(--text-muted);margin-top:2px;}
+.testi-nav{display:flex;justify-content:center;gap:10px;margin-top:28px;}
+.tnav-btn{
+  width:40px;height:40px;border-radius:50%;border:1.5px solid var(--border);
+  background:var(--white);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all var(--ease);
+}
+.tnav-btn:hover{background:var(--navy);border-color:var(--navy);}
+.tnav-btn:hover svg path{stroke:var(--white);}
+.tnav-btn svg{width:16px;height:16px;}
+.tnav-btn svg path{fill:none;stroke:var(--text-mid);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+
+/* ═══════════════════════════════════════
+   FAQ
+═══════════════════════════════════════ */
+.faq{padding:96px 0;background:var(--navy);position:relative;overflow:hidden;}
+.faq-lines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 80px,rgba(255,255,255,.015) 80px,rgba(255,255,255,.015) 81px);pointer-events:none;}
+.faq-accent{position:absolute;pointer-events:none;}
+.faq-accent-tl{top:0;left:0;width:180px;height:180px;opacity:.18;}
+.faq-accent-br{bottom:0;right:0;width:180px;height:180px;opacity:.18;transform:rotate(180deg);}
+.faq-anim-line{stroke:var(--gold);stroke-width:1;}
+.faq-hdr{text-align:center;margin-bottom:52px;}
+.faq-eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.75);display:block;margin-bottom:14px;}
+.faq-hdr h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:600;color:var(--white);margin-bottom:12px;}
+.faq-hdr p{font-size:14.5px;color:rgba(255,255,255,.38);max-width:460px;margin:0 auto;}
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:6px;}
+.faq-item{border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.07);}
+.faq-trigger{
+  width:100%;display:flex;align-items:center;gap:16px;
+  padding:18px 22px;background:rgba(255,255,255,.04);cursor:pointer;border:none;text-align:left;
+  transition:background var(--ease);
+}
+.faq-trigger:hover{background:rgba(255,255,255,.07);}
+.faq-item.open .faq-trigger{background:rgba(201,168,76,.1);}
+.faq-num{
+  width:28px;height:28px;border-radius:7px;flex-shrink:0;
+  background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:var(--gold);
+}
+.faq-q{flex:1;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.8);}
+.faq-chevron{width:24px;height:24px;flex-shrink:0;transition:transform .3s ease;}
+.faq-chevron svg path{fill:none;stroke:rgba(255,255,255,.35);stroke-width:1.8;stroke-linecap:round;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);}
+.faq-item.open .faq-answer{max-height:300px;}
+.faq-answer p{padding:16px 22px 20px 66px;font-size:14px;line-height:1.75;color:rgba(255,255,255,.45);}
+
+/* ═══════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════ */
+.contact{padding:96px 0;background:var(--white);}
+.contact-inner{display:grid;grid-template-columns:1fr 1.3fr;gap:72px;align-items:start;}
+.contact-left h2{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:600;color:var(--text-dark);margin-bottom:14px;margin-top:14px;line-height:1.1;}
+.contact-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px;}
+.contact-row-icon{width:38px;height:38px;border-radius:9px;flex-shrink:0;background:var(--gold-pale);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;}
+.contact-row-icon svg{width:18px;height:18px;fill:var(--gold);}
+.contact-row-text{font-size:14px;line-height:1.7;color:var(--text-mid);padding-top:7px;}
+.contact-form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+.contact-form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:14px;}
+.contact-form-group label{font-size:12px;font-weight:600;color:var(--text-dark);letter-spacing:.04em;text-transform:uppercase;}
+.contact-form-group input,.contact-form-group textarea{
+  font-family:var(--sans);font-size:14px;color:var(--text-dark);
+  border:1.5px solid var(--border);border-radius:10px;padding:11px 15px;
+  outline:none;transition:border-color var(--ease);background:var(--white);
+}
+.contact-form-group input:focus,.contact-form-group textarea:focus{border-color:var(--gold);}
+.contact-form-group textarea{min-height:120px;resize:vertical;}
+.btn-send{margin-top:6px;width:100%;justify-content:center;font-size:15px;padding:14px 28px;}
+
+/* ═══════════════════════════════════════
+   CTA BANNER
+═══════════════════════════════════════ */
+.cta{padding:0 0 72px;}
+.cta-box{
+  background:var(--navy);border-radius:20px;
+  padding:36px 44px;display:flex;align-items:center;gap:28px;
+}
+.cta-icon-wrap{flex-shrink:0;}
+.cta-text{flex:1;}
+.cta-text h3{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--white);margin-bottom:7px;}
+.cta-text p{font-size:14px;line-height:1.6;color:rgba(255,255,255,.45);}
+.cta-action{flex-shrink:0;}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+footer{background:var(--navy-mid);padding-top:72px;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.07);}
+.footer-logo-mark{width:40px;height:40px;border-radius:8px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:14px;}
+.footer-logo-name{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--white);margin-bottom:4px;}
+.footer-logo-sub{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:16px;}
+.footer-desc-desktop{font-size:13px;line-height:1.8;color:rgba(255,255,255,.3);max-width:280px;}
+.footer-col h4{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:18px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{font-size:13.5px;color:rgba(255,255,255,.55);transition:color var(--ease);}
+.footer-col ul li a:hover{color:var(--white);}
+.footer-contact-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;}
+.footer-contact-item svg{width:15px;height:15px;fill:var(--gold);flex-shrink:0;margin-top:2px;}
+.footer-contact-item span{font-size:13px;line-height:1.6;color:rgba(255,255,255,.45);}
+.footer-bot{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;flex-wrap:wrap;}
+.footer-copy{font-size:12.5px;color:rgba(255,255,255,.25);}
+.footer-bot-links{display:flex;gap:20px;}
+.footer-bot-links a{font-size:12.5px;color:rgba(255,255,255,.3);transition:color var(--ease);}
+.footer-bot-links a:hover{color:rgba(255,255,255,.6);}
+.footer-back-top{
+  width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.12);
+  background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all var(--ease);flex-shrink:0;
+}
+.footer-back-top:hover{background:var(--gold);border-color:var(--gold);}
+.footer-back-top svg{width:14px;height:14px;}
+.footer-back-top svg path{fill:none;stroke:rgba(255,255,255,.5);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.footer-back-top:hover svg path{stroke:var(--navy);}
+
+/* ═══════════════════════════════════════
+   SRA BADGE STRIP
+═══════════════════════════════════════ */
+.sra-strip{background:#0a1628;border-top:2px solid rgba(201,168,76,.35);padding:14px 0;text-align:center;}
+.sra-strip p{font-size:11.5px;color:rgba(255,255,255,.45);letter-spacing:.04em;}
+.sra-strip a{color:var(--gold);font-weight:500;transition:color var(--ease);}
+.sra-strip a:hover{color:var(--gold-light);}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   RESPONSIVE — TABLET 1024px
+═══════════════════════════════════════ */
+@media(max-width:1024px){
+  .container{padding:0 28px;}
+  .nav-inner{padding:0 28px;}
+  .hero{padding:100px 28px 60px;}
+  .testi-slider-wrap{margin:0 -28px;padding:0 28px;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:28px;}
+  .pgrid{grid-template-columns:1fr 1fr;}
+  .hero-imgs{width:90%;}
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — MOBILE 768px
+═══════════════════════════════════════ */
+@media(max-width:768px){
+  /* Base */
+  .container{padding:0 16px;}
+  .nav-inner{padding:0 16px;}
+
+  /* Nav */
+  .nav-links{display:none;}
+  .nav-burger{display:flex;}
+  .nav-logo img{height:56px!important;}
+
+  /* Hero */
+  .hero{
+    padding:80px 16px 40px;
+    flex-direction:column;
+    gap:0;
+    align-items:center;
+    text-align:center;
+    min-height:auto;
+  }
+  .hero-content{width:100%;max-width:100%;align-items:center;margin-bottom:28px;}
+  .hero-eyebrow{font-size:10px;margin-bottom:14px;}
+  .hero h1{font-size:clamp(28px,7vw,42px);line-height:1.12;margin-bottom:14px;}
+  .hero-sub{font-size:13.5px;margin-bottom:24px;max-width:100%;}
+  .hero-ctas{flex-direction:column;gap:10px;width:100%;margin-bottom:0;}
+  .hero-ctas .btn{width:100%;justify-content:center;text-align:center;padding:14px 20px;}
+  .hero-imgs{
+    width:100%;
+    max-width:100%;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:28px;
+  }
+  .hero-img:first-child,.hero-img:last-child{height:170px;}
+  .hero-badge{display:none;}
+
+  /* About */
+  .about{padding:52px 0;}
+  .about-inner{width:100%;}
+  .about-stats{grid-template-columns:1fr 1fr;gap:12px;}
+  .astat{padding:16px;}
+
+  /* Practice */
+  .practice{padding:52px 0;}
+  .practice-hdr{flex-direction:column;align-items:flex-start;gap:14px;}
+  .practice-hdr .btn{width:100%;text-align:center;justify-content:center;}
+  .pgrid{grid-template-columns:1fr;gap:16px;}
+  .pcard-img{height:180px;}
+  .pcard-body{padding:18px;}
+  .pcard-actions{flex-direction:column;gap:8px;}
+  .pcard-actions .btn{width:100%;text-align:center;justify-content:center;}
+
+  /* Why */
+  .why{padding:52px 0;}
+  .why-inner{grid-template-columns:1fr;gap:32px;}
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .wcard{padding:18px 16px;}
+
+  /* Team */
+  .team{padding:52px 0;}
+  .tgrid{grid-template-columns:1fr 1fr;gap:16px;}
+  .tmem-name{font-size:17px;}
+
+  /* Testimonials */
+  .testi{padding:52px 0;}
+  .testi-slider-wrap{margin:0 -16px;padding:0 16px;cursor:grab;}
+  .tcard{flex:0 0 calc(90% - 8px);min-width:calc(90% - 8px);}
+
+  /* FAQ */
+  .faq{padding:52px 0;}
+  .faq-answer p{padding:14px 18px 18px 56px;}
+  .faq-trigger{padding:15px 16px;}
+
+  /* Fees section */
+  .fees-hero{padding:48px 0 36px;}
+  .fees-body{padding:48px 0;}
+  .fees-section{margin-bottom:44px;}
+  .fees-rate-row{grid-template-columns:1fr;}
+  .disb-grid{grid-template-columns:1fr 1fr;}
+  .fees-excl-grid{grid-template-columns:1fr;}
+  .fees-time-grid{grid-template-columns:1fr 1fr;}
+  .probate-phase{flex-wrap:wrap;gap:12px;}
+  .probate-phase-time{margin-left:0;}
+
+  /* Contact */
+  .contact{padding:52px 0;}
+  .contact-inner{grid-template-columns:1fr;gap:36px;}
+  .contact-form-row{grid-template-columns:1fr;}
+  .btn-send{font-size:14px;}
+
+  /* CTA */
+  .cta{padding:0 0 48px;}
+  .cta-box{
+    flex-direction:column;align-items:flex-start;
+    padding:24px 20px;border-radius:14px;gap:18px;
+  }
+  .cta-icon-wrap svg{width:48px;height:48px;}
+  .cta-text h3{font-size:20px;}
+  .cta-action{width:100%;}
+  .cta-action .btn{width:100%;justify-content:center;text-align:center;}
+
+  /* Footer */
+  footer{padding-top:40px;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:20px;}
+  .footer-top > div:first-child{grid-column:1/-1;}
+  .footer-top > div:first-child img{height:80px!important;margin-top:0!important;}
+  .footer-desc-desktop{display:block;font-size:12px;}
+  .footer-col h4{font-size:11px;margin-bottom:12px;}
+  .footer-col ul li a{font-size:13px;}
+  .footer-bot{flex-direction:column;align-items:flex-start;gap:10px;}
+  .footer-bot-links{flex-wrap:wrap;gap:10px;}
+  .footer-copy{font-size:11.5px;}
+
+  /* SRA strip */
+  .sra-strip p{font-size:10.5px;padding:0 16px;line-height:1.6;}
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE 480px
+═══════════════════════════════════════ */
+@media(max-width:480px){
+  .hero h1{font-size:clamp(26px,8vw,38px);}
+  .about-stats{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .tgrid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+  .footer-top > div:first-child{grid-column:auto;}
+  .disb-grid{grid-template-columns:1fr;}
+  .fees-time-grid{grid-template-columns:1fr 1fr;}
+  .fees-table{font-size:12px;}
+  .fees-table thead th,.fees-table tbody td{padding:9px 10px;}
+  .fees-table thead th:nth-child(2){display:none;}
+  .fees-table tbody td:nth-child(2){display:none;}
+  .hero-imgs{grid-template-columns:1fr;}
+  .hero-imgs{grid-template-columns:1fr 1fr;gap:8px;}
+  .hero-img:first-child{display:block;}
+  .hero-img:last-child{display:block;}
+  .tcard{flex:0 0 calc(95% - 8px);min-width:calc(95% - 8px);}
+  .faq-answer p{padding:12px 16px 16px 16px;}
+  .faq-num{display:none;}
+  .probate-phase-num{width:32px;height:32px;font-size:15px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ════ PRELOADER ════ -->
+<div id="preloader">
+  <div class="pre-logo">
+    <span class="pre-name">A. L. Hughes &amp; Co.</span>
+    <span class="pre-sub">Solicitors &amp; Commissioners for Oaths</span>
+  </div>
+  <div class="pre-bar-wrap"><div class="pre-bar-fill" id="preBar"></div></div>
+</div>
+
+<!-- ════ SCROLL PROGRESS ════ -->
+<div id="sprogress"><div id="sprogress-fill"></div></div>
+
+<!-- ════ CURSOR GLOW ════ -->
+<div id="cglow"></div>
+
+<!-- ════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777985594704_urfngic.png"
+           alt="A. L. Hughes &amp; Co." style="height:75px;width:auto;display:block;mix-blend-mode:lighten;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#practice">Practice Areas</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#fees">Costs &amp; Fees</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-gold">Get in Touch</a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" id="drawer">
+  <a href="#about">About</a>
+  <a href="#practice">Practice Areas</a>
+  <a href="#team">Our Team</a>
+  <a href="#fees">Costs &amp; Fees</a>
+  <a href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a href="#contact" class="btn btn-gold">Get in Touch</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+
+    <p class="hero-eyebrow">Streatham, South London — Established 1950</p>
+    <h1>Trusted Legal Expertise,<br>Personal Service</h1>
+    <p class="hero-sub">A well-established firm of Solicitors delivering the quality of a central London practice — with the personal care and transparent fees only a small firm can offer.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-gold">Enquire Today</a>
+      <a href="#practice" class="btn btn-outline-w">Our Practice Areas</a>
+    </div>
+  </div>
+  <div class="hero-imgs" style="width:80%;max-width:944px;">
+    <div class="hero-img">
+      <img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832608742_83hyk60.webp" alt="Scales of justice" loading="eager">
+    </div>
+    <div class="hero-img">
+      <img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832607556_ldlyq90.webp" alt="Legal team" loading="eager">
+    </div>
+  </div>
+  <div class="hero-badge">
+    Regulated by the <span>Solicitors Regulation Authority</span> · SRA ID 51553
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     ABOUT
+════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <span class="pill-b pill-gold reveal">About Us</span>
+      <h2 class="reveal rd1">A Firm Built on Trust<br>Since 1950</h2>
+      <p class="about-text reveal rd2">
+        A. L. Hughes &amp; Co. has been a cornerstone of the Streatham community since its founding in 1950. We aim to provide our clients with <strong>the quality of service they would expect from a central London legal practice</strong>, combined with the personal touch of a small firm — and at a cost that is always fair and transparent. All legal work in our firm is carried out by our qualified Solicitors, not paralegals or unqualified staff.
+      </p>
+      <div class="about-stats">
+        <div class="astat astat-dark1 reveal rd3">
+          <div class="astat-icon" style="background:rgba(13,30,61,0.85);border:1px solid rgba(201,168,76,0.3);">
+            <svg viewBox="0 0 24 24" fill="rgba(201,168,76,.9)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <div>
+            <div class="astat-label">Qualified Solicitors</div>
+            <div class="astat-value">3</div>
+          </div>
+        </div>
+        <div class="astat astat-gold reveal rd4">
+          <div class="astat-icon" style="background:rgba(13,30,61,0.85);border:1px solid rgba(13,30,61,0.2);">
+            <svg viewBox="0 0 24 24" fill="rgba(201,168,76,.9)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 15H11v-6l-2 .01V9.5l3.5-.01V17zm0-9.5c-.83 0-1.5-.67-1.5-1.5S11.67 4.5 12.5 4.5 14 5.17 14 6s-.67 1.5-1.5 1.5z"/></svg>
+          </div>
+          <div>
+            <div class="astat-label">Years Established</div>
+            <div class="astat-value">75+</div>
+          </div>
+        </div>
+        <div class="astat astat-dark2 reveal rd5">
+          <div class="astat-icon" style="background:rgba(13,30,61,0.85);border:1px solid rgba(201,168,76,0.3);">
+            <svg viewBox="0 0 24 24" fill="rgba(201,168,76,.8)"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="astat-label">Practice Areas</div>
+            <div class="astat-value">8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     PRACTICE AREAS
+════════════════════════════════════ -->
+<section class="practice" id="practice">
+  <div class="container">
+    <div class="practice-hdr reveal">
+      <div>
+        <span class="pill-b pill-navy">What We Do</span>
+        <h2>Our Practice Areas</h2>
+      </div>
+      <a href="#contact" class="btn btn-gold" style="flex-shrink:0">Enquire About a Service →</a>
+    </div>
+    <div class="pgrid">
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832603674_ip086yz.webp" alt="Domestic Property" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Domestic Property</h3>
+          <p>Expert conveyancing services for buyers and sellers of residential property across England and Wales.</p>
+          <ul class="pcard-kp">
+            <li>Freehold &amp; leasehold conveyancing</li>
+            <li>Re-mortgages &amp; lease extensions</li>
+            <li>Collective enfranchisement</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#fees" class="btn btn-ghost">View Fees →</a></div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832602012_1ve2vbj.webp" alt="Commercial Property" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Commercial Property</h3>
+          <p>Comprehensive legal services for businesses acquiring, leasing or disposing of commercial premises.</p>
+          <ul class="pcard-kp">
+            <li>Commercial leases &amp; assignments</li>
+            <li>Lease renewals &amp; negotiations</li>
+            <li>Development &amp; building land</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#contact" class="btn btn-ghost">Learn More →</a></div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832597674_prne37d.webp" alt="Wills &amp; Probate" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Wills &amp; Probate</h3>
+          <p>Sensitive, thorough estate planning and probate administration handled with care and expertise.</p>
+          <ul class="pcard-kp">
+            <li>Will drafting &amp; estate planning</li>
+            <li>Grant of Probate applications</li>
+            <li>Estate administration &amp; distributions</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#fees" class="btn btn-ghost">View Fees →</a></div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777832606472_nhc37bp.webp" alt="Powers of Attorney" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Powers of Attorney</h3>
+          <p>Guidance and preparation of Lasting Powers of Attorney and applications to the Court of Protection.</p>
+          <ul class="pcard-kp">
+            <li>Lasting Powers of Attorney</li>
+            <li>Court of Protection applications</li>
+            <li>Public Guardianship Office matters</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#contact" class="btn btn-ghost">Learn More →</a></div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777992913961_bc886zq.jpeg" alt="Town &amp; Country Planning" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Town &amp; Country Planning</h3>
+          <p>Specialist planning law advice for residential and commercial development projects in England.</p>
+          <ul class="pcard-kp">
+            <li>Planning application guidance</li>
+            <li>Development land advice</li>
+            <li>Setting up new developments</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#contact" class="btn btn-ghost">Learn More →</a></div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard-img"><img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777992530282_cozhgj6.jpeg" alt="Partnerships &amp; Shareholders" loading="lazy"></div>
+        <div class="pcard-body">
+          <h3>Partnerships &amp; Shareholders</h3>
+          <p>Drafting and advising on partnership agreements and shareholder arrangements for businesses.</p>
+          <ul class="pcard-kp">
+            <li>Partnership agreements</li>
+            <li>Shareholder agreements</li>
+            <li>Business structure advice</li>
+          </ul>
+          <div class="pcard-actions"><a href="#contact" class="btn btn-card">Enquire</a><a href="#contact" class="btn btn-ghost">Learn More →</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════════ -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-left">
+        <span class="pill-b pill-navy">Why Choose Us</span>
+        <h2>The personal touch that larger firms simply cannot offer</h2>
+        <p>We believe every client deserves direct access to a fully qualified Solicitor — not a paralegal or unqualified member of staff. When you instruct us, your matter is handled by one of our Solicitors from start to finish.</p>
+      </div>
+      <div class="why-grid">
+        <div class="wcard">
+          <div class="wcard-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Qualified Solicitors Only</h3>
+          <p>All legal work is done by our three qualified Solicitors — no paralegals, no unqualified staff doing the work.</p>
+        </div>
+        <div class="wcard">
+          <div class="wcard-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>75 Years of Experience</h3>
+          <p>Founded in 1950 and still going strong, with deep roots in the South London community and a long track record of success.</p>
+        </div>
+        <div class="wcard">
+          <div class="wcard-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Transparent, Fair Fees</h3>
+          <p>Clear estimates upfront, competitive hourly rates, and no hidden surprises. We cap fees on abortive transactions.</p>
+        </div>
+        <div class="wcard">
+          <div class="wcard-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Genuine Personal Service</h3>
+          <p>You speak directly to your Solicitor — not a call centre or a junior assistant — from your first enquiry to completion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     COSTS & FEES
+════════════════════════════════════ -->
+<style>
+/* ═══ FEES PAGE STYLES ═══ */
+.fees-hero{background:var(--navy);padding:72px 0 56px;text-align:center;position:relative;overflow:hidden;}
+.fees-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 80px,rgba(255,255,255,.015) 80px,rgba(255,255,255,.015) 81px);pointer-events:none;}
+.fees-hero h1{font-family:var(--serif);font-size:clamp(34px,4vw,52px);font-weight:600;color:var(--white);margin-bottom:14px;}
+.fees-hero p{font-size:15px;line-height:1.8;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;}
+.fees-hero .pill-b{margin-bottom:18px;}
+
+.fees-body{padding:80px 0;background:var(--white);}
+.fees-section{margin-bottom:64px;}
+.fees-section-title{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:600;color:var(--text-dark);margin-bottom:6px;display:flex;align-items:center;gap:14px;}
+.fees-section-title::after{content:'';flex:1;height:1px;background:var(--border);}
+.fees-section-sub{font-size:14px;color:var(--text-muted);margin-bottom:28px;line-height:1.7;}
+
+/* Rate card */
+.fees-rate-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;}
+.fees-rate-card{background:var(--navy);border-radius:var(--r);padding:28px 28px 24px;position:relative;overflow:hidden;}
+.fees-rate-card::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;border-radius:50%;background:rgba(201,168,76,.12);}
+.fees-rate-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.fees-rate-amount{font-family:var(--serif);font-size:36px;font-weight:600;color:var(--white);line-height:1;margin-bottom:6px;}
+.fees-rate-unit{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:14px;}
+.fees-rate-note{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;}
+
+/* Examples table */
+.fees-table{width:100%;border-collapse:collapse;margin-bottom:20px;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);}
+.fees-table thead{background:var(--navy);}
+.fees-table thead th{padding:13px 18px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.7);text-align:left;}
+.fees-table tbody tr{border-bottom:1px solid var(--border);}
+.fees-table tbody tr:last-child{border-bottom:none;}
+.fees-table tbody tr:nth-child(even){background:var(--stone);}
+.fees-table tbody td{padding:13px 18px;font-size:13.5px;color:var(--text-mid);line-height:1.5;}
+.fees-table tbody td:last-child{font-weight:600;color:var(--text-dark);}
+.fees-table-note{font-size:12.5px;color:var(--text-muted);margin-bottom:24px;font-style:italic;}
+
+/* Timescales */
+.fees-time-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.fees-time-val{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--text-dark);margin-bottom:4px;}
+.fees-time-desc{font-size:13px;color:var(--text-muted);}
+
+/* Disbursements grid */
+.disb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:10px;}
+.disb-card{background:var(--stone);border-radius:10px;padding:16px 18px;border:1px solid var(--border);}
+.disb-card-name{font-size:13px;font-weight:600;color:var(--text-dark);margin-bottom:5px;}
+.disb-card-range{font-size:13px;color:var(--gold);font-weight:600;}
+.disb-card-note{font-size:11.5px;color:var(--text-muted);margin-top:3px;}
+
+/* Probate phases */
+.probate-phases{display:flex;flex-direction:column;gap:0;}
+.probate-phase{display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--border);}
+.probate-phase:last-child{border-bottom:none;}
+.probate-phase-num{width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:18px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.probate-phase-body h4{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:5px;}
+.probate-phase-body p{font-size:13.5px;color:var(--text-muted);line-height:1.7;}
+.probate-phase-time{margin-left:auto;flex-shrink:0;background:var(--gold-pale);border:1px solid rgba(201,168,76,.25);border-radius:8px;padding:5px 13px;font-size:12px;font-weight:600;color:#7a5c10;white-space:nowrap;}
+
+/* Not taken on */
+.fees-excluded{background:var(--stone);border-radius:var(--r);padding:28px 32px;border:1px solid var(--border);}
+.fees-excluded h4{font-size:14px;font-weight:700;color:var(--text-dark);margin-bottom:16px;}
+.fees-excl-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;}
+.fees-excl-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text-mid);line-height:1.5;padding:4px 0;}
+.fees-excl-icon{color:#B91C1C;flex-shrink:0;margin-top:2px;font-size:14px;}
+
+/* Timescale table */
+.fees-time-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px;}
+.fees-time-card{background:var(--stone);border:1px solid var(--border);border-radius:10px;padding:18px 20px;text-align:center;}
+
+@media(max-width:768px){
+  .fees-rate-row{grid-template-columns:1fr;}
+  .disb-grid{grid-template-columns:1fr 1fr;}
+  .fees-excl-grid{grid-template-columns:1fr;}
+  .fees-time-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:480px){
+  .disb-grid{grid-template-columns:1fr;}
+  .fees-table{font-size:12px;}
+  .fees-table thead th,.fees-table tbody td{padding:10px 12px;}
+}
+</style>
+
+<section id="fees" style="padding:0;">
+
+  <!-- Hero -->
+  <div class="fees-hero">
+    <div class="container">
+      <span class="pill-b" style="background:rgba(201,168,76,.15);color:var(--gold);border-color:rgba(201,168,76,.3);">Costs &amp; Transparency</span>
+      <h1>Honest fees, <em>explained clearly</em></h1>
+      <p>The Solicitors' Regulation Authority requires all firms to publish costs information. Here is exactly how we charge — no hidden surprises.</p>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="fees-body">
+    <div class="container">
+
+      <!-- ── CONVEYANCING ── -->
+      <div class="fees-section">
+        <h2 class="fees-section-title">Conveyancing</h2>
+        <p class="fees-section-sub">We provide a written estimate at the outset setting out our fees and expected expenses. Our rate is <strong>£250 per hour</strong> plus a small fraction of the property value, plus VAT at 20%.</p>
+
+        <div class="fees-rate-row">
+          <div class="fees-rate-card">
+            <div class="fees-rate-label">Hourly Rate</div>
+            <div class="fees-rate-amount">£250</div>
+            <div class="fees-rate-unit">per hour + VAT (20%)</div>
+            <div class="fees-rate-note">Plus 50p per £1,000 of property price, and 25p per £1,000 of any mortgage.</div>
+          </div>
+          <div class="fees-rate-card" style="background:var(--gold-pale);border:1px solid rgba(201,168,76,.3);">
+            <div class="fees-rate-label" style="color:var(--navy);">Abortive Transactions</div>
+            <div class="fees-rate-amount" style="color:var(--navy);">50%</div>
+            <div class="fees-rate-unit" style="color:var(--text-muted);">maximum cap on fees</div>
+            <div class="fees-rate-note" style="color:var(--text-mid);">If a transaction does not complete, we cap our fees at 50% of the original estimate — or less if less work was done.</div>
+          </div>
+        </div>
+
+        <!-- Examples table -->
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text-dark);margin-bottom:14px;">Fee Examples <span style="font-size:14px;font-weight:400;color:var(--text-muted);">(at £700,000 property value, excl. disbursements)</span></h3>
+        <table class="fees-table">
+          <thead>
+            <tr>
+              <th>Transaction Type</th>
+              <th>Details</th>
+              <th>Total inc. VAT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Freehold Sale</td>
+              <td>With mortgage to repay</td>
+              <td>£2,017.20</td>
+            </tr>
+            <tr>
+              <td>Leasehold Sale</td>
+              <td>With mortgage to repay</td>
+              <td>£2,305.20</td>
+            </tr>
+            <tr>
+              <td>Freehold Purchase</td>
+              <td>With mortgage of £240,000</td>
+              <td>£2,449.20</td>
+            </tr>
+            <tr>
+              <td>Leasehold Purchase</td>
+              <td>With mortgage of £240,000</td>
+              <td>£2,593.20</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="fees-table-note">All figures include VAT at 20%. Disbursements (searches, Land Registry fees, Stamp Duty etc.) are additional — see below.</p>
+
+        <!-- Time estimates -->
+        <div class="fees-time-grid">
+          <div class="fees-time-card">
+            <div class="fees-time-label">Avg. Freehold</div>
+            <div class="fees-time-val">~4 hrs</div>
+            <div class="fees-time-desc">Solicitor time</div>
+          </div>
+          <div class="fees-time-card">
+            <div class="fees-time-label">Avg. Leasehold</div>
+            <div class="fees-time-val">~5 hrs</div>
+            <div class="fees-time-desc">Solicitor time</div>
+          </div>
+          <div class="fees-time-card">
+            <div class="fees-time-label">Mortgage Work</div>
+            <div class="fees-time-val">+45 min</div>
+            <div class="fees-time-desc">Lender requirements</div>
+          </div>
+          <div class="fees-time-card">
+            <div class="fees-time-label">Remortgage</div>
+            <div class="fees-time-val">~3 hrs</div>
+            <div class="fees-time-desc">We recommend in-house lender services</div>
+          </div>
+        </div>
+
+        <!-- Standard extras -->
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text-dark);margin:32px 0 14px;">Standard Additional Charges</h3>
+        <table class="fees-table">
+          <thead>
+            <tr><th>Item</th><th>Cost (inc. VAT)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SDLT / Land Transaction Tax return (drafting &amp; submission)</td><td>£96.00</td></tr>
+            <tr><td>Administration of paying &amp; receiving funds</td><td>£42.00</td></tr>
+            <tr><td>ID verification (per person)</td><td>£10.00</td></tr>
+            <tr><td>Land Registry document copies</td><td>£3.00 per doc</td></tr>
+            <tr><td>Bankruptcy searches</td><td>£2.00 per name</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ── DISBURSEMENTS ── -->
+      <div class="fees-section">
+        <h2 class="fees-section-title">Disbursements &amp; Searches</h2>
+        <p class="fees-section-sub">All disbursements are passed on at cost — any discounts we secure are passed on to you. We will not incur additional disbursement costs over £30 + VAT without asking you first.</p>
+
+        <div class="disb-grid">
+          <div class="disb-card">
+            <div class="disb-card-name">Local Searches</div>
+            <div class="disb-card-range">£200 – £400</div>
+            <div class="disb-card-note">Varies by Council. inc. VAT.</div>
+          </div>
+          <div class="disb-card">
+            <div class="disb-card-name">Water Searches</div>
+            <div class="disb-card-range">£60 – £80</div>
+            <div class="disb-card-note">Residential. Double for commercial. inc. VAT.</div>
+          </div>
+          <div class="disb-card">
+            <div class="disb-card-name">Environmental Search</div>
+            <div class="disb-card-range">£70 – £90</div>
+            <div class="disb-card-note">Domestic. £200–£300 for commercial. inc. VAT.</div>
+          </div>
+          <div class="disb-card">
+            <div class="disb-card-name">Land Registry Fees</div>
+            <div class="disb-card-range">Variable</div>
+            <div class="disb-card-note">We provide exact amounts with your estimate.</div>
+          </div>
+          <div class="disb-card">
+            <div class="disb-card-name">Leasehold Management</div>
+            <div class="disb-card-range">£0 – £600</div>
+            <div class="disb-card-note">Third-party charges for management info / registration. inc. VAT.</div>
+          </div>
+          <div class="disb-card">
+            <div class="disb-card-name">Stamp Duty Land Tax</div>
+            <div class="disb-card-range">Variable</div>
+            <div class="disb-card-note">If property in England. Calculator available on HMRC website.</div>
+          </div>
+        </div>
+        <p class="fees-table-note">* Items marked with VAT are charged at the standard rate of 20%. If rates change during a transaction, the revised rate applies. Any price changes to necessary disbursements will be notified to you.</p>
+      </div>
+
+      <!-- ── PROBATE ── -->
+      <div class="fees-section">
+        <h2 class="fees-section-title">Probate</h2>
+        <p class="fees-section-sub">Probate is charged on a time basis at <strong>£250 per hour + VAT (20%)</strong>. Any conveyancing element within a probate is charged at the conveyancing rate.</p>
+
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text-dark);margin-bottom:14px;">The Three Phases of Probate</h3>
+        <div class="probate-phases">
+          <div class="probate-phase">
+            <div class="probate-phase-num">1</div>
+            <div class="probate-phase-body">
+              <h4>Information Gathering</h4>
+              <p>Working with Executor(s) or intended Administrator(s) to assess the estate — assets, liabilities, and the names and addresses of those entitled.</p>
+            </div>
+            <div class="probate-phase-time">1 – 3 months</div>
+          </div>
+          <div class="probate-phase">
+            <div class="probate-phase-num">2</div>
+            <div class="probate-phase-body">
+              <h4>Grant Application</h4>
+              <p>Application for a Grant of Probate or Administration, including completing inheritance tax forms. HMRC clearance and Probate Registry processing included.</p>
+            </div>
+            <div class="probate-phase-time">1 – 6 months</div>
+          </div>
+          <div class="probate-phase">
+            <div class="probate-phase-num">3</div>
+            <div class="probate-phase-body">
+              <h4>Estate Administration</h4>
+              <p>Liquidating assets, paying tax and debts, transferring assets where appropriate, and distributing funds to beneficiaries.</p>
+            </div>
+            <div class="probate-phase-time">3 – 6+ months</div>
+          </div>
+        </div>
+
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text-dark);margin:28px 0 14px;">Probate Additional Costs</h3>
+        <table class="fees-table">
+          <thead><tr><th>Item</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>Probate Fees</td><td>As per current government fee schedule</td></tr>
+            <tr><td>Investigative costs</td><td>Discussed with you before incurring — carries VAT</td></tr>
+            <tr><td>Land Registry document copies</td><td>£3.00 per document</td></tr>
+            <tr><td>Inheritance Tax</td><td>Where applicable</td></tr>
+            <tr><td>Other expenses</td><td>Any costs necessary to administer the estate — carries VAT</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ── WORK WE DON'T TAKE ON ── -->
+      <div class="fees-section" style="margin-bottom:0;">
+        <h2 class="fees-section-title">Work We Do Not Undertake</h2>
+        <p class="fees-section-sub">For risk management and other reasons, we do not deal with the following types of transactions.</p>
+        <div class="fees-excluded">
+          <h4>The following are outside our scope:</h4>
+          <div class="fees-excl-grid">
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Right to buy purchases</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Cases where borrowing exceeds 80% of value</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Sub-prime lender borrowing</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Bridging loan transactions</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Equity release</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Shared ownership purchases (sales are fine)</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Help to Buy transactions</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>"Off plan" new property purchases</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Divorce-related sales (unless court order exists)</div>
+            <div class="fees-excl-item"><span class="fees-excl-icon">✕</span>Contentious work, litigation, or matters likely to lead to it</div>
+          </div>
+        </div>
+        <div style="margin-top:32px;text-align:center;">
+          <a href="#contact" class="btn btn-gold">Request a Fee Estimate</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     TEAM
+════════════════════════════════════ -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="team-hdr">
+      <span class="pill-b pill-gold">Our Team</span>
+      <h2>The Solicitors Who Do the Work</h2>
+      <p>Every matter at A. L. Hughes &amp; Co. is handled by a qualified Solicitor. You will always know who is dealing with your case.</p>
+    </div>
+    <div class="tgrid">
+
+      <div class="tmem">
+        <div style="width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--r);margin-bottom:16px;background:linear-gradient(145deg,#152540 0%,#1D3361 60%,#0D1E3D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;position:relative;">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(201,168,76,.03) 30px,rgba(201,168,76,.03) 31px);"></div>
+          <div style="width:90px;height:90px;border-radius:50%;border:2px solid rgba(201,168,76,.5);background:rgba(201,168,76,.1);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;">
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:600;color:#C9A84C;letter-spacing:2px;">NM</span>
+          </div>
+          <div style="position:relative;z-index:1;text-align:center;padding:0 20px;">
+            <div style="width:40px;height:1px;background:rgba(201,168,76,.4);margin:0 auto 12px;"></div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);">Est. 1968</div>
+          </div>
+        </div>
+        <div class="tmem-role">Consultant Solicitor</div>
+        <div class="tmem-row">
+          <div class="tmem-name">Norman Mann</div>
+        </div>
+        <div class="tmem-specs">At the firm since 1968. Admitted as a Solicitor in 1969. Consultant — not taking on new cases.</div>
+      </div>
+
+      <div class="tmem">
+        <div style="width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--r);margin-bottom:16px;background:linear-gradient(145deg,#152540 0%,#1D3361 60%,#0D1E3D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;position:relative;">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(201,168,76,.03) 30px,rgba(201,168,76,.03) 31px);"></div>
+          <div style="width:90px;height:90px;border-radius:50%;border:2px solid rgba(201,168,76,.5);background:rgba(201,168,76,.1);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;">
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:600;color:#C9A84C;letter-spacing:2px;">LM</span>
+          </div>
+          <div style="position:relative;z-index:1;text-align:center;padding:0 20px;">
+            <div style="width:40px;height:1px;background:rgba(201,168,76,.4);margin:0 auto 12px;"></div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);">Est. 1984</div>
+          </div>
+        </div>
+        <div class="tmem-role">Partner</div>
+        <div class="tmem-row">
+          <div class="tmem-name">Laurence Mann LLB, FRSA</div>
+        </div>
+        <div class="tmem-specs">Qualified 1984. Commercial &amp; Residential Conveyancing · Leasehold Enfranchisement · School Governor &amp; Community Choir member.</div>
+      </div>
+
+      <div class="tmem">
+        <div style="width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--r);margin-bottom:16px;background:linear-gradient(145deg,#152540 0%,#1D3361 60%,#0D1E3D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;position:relative;">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(201,168,76,.03) 30px,rgba(201,168,76,.03) 31px);"></div>
+          <div style="width:90px;height:90px;border-radius:50%;border:2px solid rgba(201,168,76,.5);background:rgba(201,168,76,.1);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;">
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:600;color:#C9A84C;letter-spacing:2px;">FH</span>
+          </div>
+          <div style="position:relative;z-index:1;text-align:center;padding:0 20px;">
+            <div style="width:40px;height:1px;background:rgba(201,168,76,.4);margin:0 auto 12px;"></div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);">Est. 1983</div>
+          </div>
+        </div>
+        <div class="tmem-role">Partner</div>
+        <div class="tmem-row">
+          <div class="tmem-name">Frances Holton</div>
+        </div>
+        <div class="tmem-specs">Qualified 1983. Residential Conveyancing · Wills &amp; Probate · Powers of Attorney · Court of Protection.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════ -->
+<section class="testi" id="testimonials">
+  <div class="container">
+    <div class="testi-hdr reveal">
+      <span class="pill-b pill-navy">Client Testimonials</span>
+      <h2>What Our Clients Say</h2>
+      <p>We have served clients across South London and beyond for over seven decades. Their trust is our greatest measure of success.</p>
+    </div>
+    <div class="testi-slider-wrap">
+      <div class="testi-slider" id="slider">
+
+        <div class="tcard">
+          <div class="tcard-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tcard-quote">"A. L. Hughes &amp; Co. handled our house purchase with exceptional professionalism. Laurence kept us informed at every stage and the whole process went through smoothly and well within our expected timeline. Thoroughly recommended."</p>
+          <div class="tcard-author">
+            <div class="tcard-info">
+              <div class="tcard-name">Michael &amp; Sarah Thompson</div>
+              <div class="tcard-title">Conveyancing Clients, Streatham</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tcard-quote">"Frances guided us through probate after losing my mother. She was compassionate, clear, and handled everything impeccably. The fee estimate was accurate and there were no hidden costs. Exactly what you need during a difficult time."</p>
+          <div class="tcard-author">
+            <div class="tcard-info">
+              <div class="tcard-name">Patricia Okafor</div>
+              <div class="tcard-title">Probate Client, Clapham</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tcard-quote">"We used A. L. Hughes for the commercial lease on our new premises. Laurence was meticulous, spotted several issues in the draft lease and saved us considerable money. Outstanding service at a very competitive price."</p>
+          <div class="tcard-author">
+            <div class="tcard-info">
+              <div class="tcard-name">David Mensah</div>
+              <div class="tcard-title">Commercial Property Client, South London</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="tcard-quote">"Frances prepared our Wills and Lasting Powers of Attorney. She explained everything clearly, was patient with our questions, and made sure we had exactly the right arrangements in place. We would not hesitate to recommend this firm."</p>
+          <div class="tcard-author">
+            <div class="tcard-info">
+              <div class="tcard-name">Robert &amp; Anne Clarke</div>
+              <div class="tcard-title">Wills &amp; LPA Clients, Norbury</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="tnav-btn" id="tPrev"><svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5"/></svg></button>
+      <button class="tnav-btn" id="tNext"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     FAQ
+════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="faq-lines"></div>
+  <svg class="faq-accent faq-accent-tl" viewBox="0 0 180 180" fill="none">
+    <line x1="0" y1="40" x2="140" y2="40" class="faq-anim-line"/>
+    <line x1="40" y1="0" x2="40" y2="140" class="faq-anim-line"/>
+    <line x1="0" y1="80" x2="100" y2="80" class="faq-anim-line" style="opacity:.5"/>
+    <line x1="80" y1="0" x2="80" y2="100" class="faq-anim-line" style="opacity:.5"/>
+  </svg>
+  <svg class="faq-accent faq-accent-br" viewBox="0 0 180 180" fill="none">
+    <line x1="0" y1="40" x2="140" y2="40" class="faq-anim-line"/>
+    <line x1="40" y1="0" x2="40" y2="140" class="faq-anim-line"/>
+  </svg>
+  <div class="container">
+    <div class="faq-hdr reveal">
+      <p class="faq-eyebrow">Common Questions</p>
+      <h2>Frequently Asked Questions</h2>
+      <p>Answers to the most common questions we receive from clients about our services and how we work.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item open">
+        <button class="faq-trigger" onclick="toggleFaq(this)">
+          <span class="faq-num">1</span>
+          <span class="faq-q">How do I get in touch with A. L. Hughes &amp; Co.?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 14 14"><path d="M2 4l5 5 5-5"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>You can call us on 020 8769 7100, fax on 020 8677 6644, or email us at mail@alhughes.co.uk. Our postal address is 340 Streatham High Road, London, SW16 6HH. We aim to be accessible — if calling or faxing from outside the UK, use (+44) 20 instead of 020.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)">
+          <span class="faq-num">2</span>
+          <span class="faq-q">Who will actually handle my case?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 14 14"><path d="M2 4l5 5 5-5"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>All legal work in our firm is done by one of our three qualified Solicitors: Laurence Mann or Frances Holton. We do not use paralegals or unqualified staff to do the substantive legal work. When you speak to or write to the person handling your case, it is one of us.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)">
+          <span class="faq-num">3</span>
+          <span class="faq-q">How long will my conveyancing transaction take?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 14 14"><path d="M2 4l5 5 5-5"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>An average freehold purchase or sale typically takes about 4 hours of solicitor time, and a leasehold around 5 hours. The overall calendar time depends on many variables in the chain. We have compiled a detailed step-by-step guide to the conveyancing process which is available on our website.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)">
+          <span class="faq-num">4</span>
+          <span class="faq-q">What areas of work do you not undertake?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 14 14"><path d="M2 4l5 5 5-5"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>For risk management reasons, we do not handle: Right to Buy purchases, Help to Buy transactions, off-plan new property purchases, equity release, shared ownership purchases, bridging loan or sub-prime lender cases, cases where borrowing exceeds 80% of value, divorce-related property sales without a court order, or any contentious/litigation matters.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)">
+          <span class="faq-num">5</span>
+          <span class="faq-q">How do you handle complaints?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 14 14"><path d="M2 4l5 5 5-5"/></svg></span>
+        </button>
+        <div class="faq-answer"><p>If you are unhappy with anything, please contact us directly. You may raise concerns informally with either partner. For formal complaints, write or email to mail@alhughes.co.uk. We follow the Legal Ombudsman's process: acknowledging complaints within 2 working days and providing updates every 10 working days. If unresolved, the Legal Ombudsman can be contacted at www.legalombudsman.org.uk or on 0300 555 0333.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     CONTACT
+════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <span class="pill-b pill-navy">Get in Touch</span>
+        <h2>Contact Us</h2>
+        <p style="font-size:14.5px;line-height:1.8;color:var(--text-muted);margin-bottom:32px;">Whether you have a legal question about property, probate, wills or any of our other services, our qualified Solicitors are ready to help. We always respond to enquiries promptly.</p>
+        <div class="contact-row">
+          <div class="contact-row-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+          <span class="contact-row-text">020 8769 7100<br><span style="font-size:12px;color:var(--text-muted);">Fax: 020 8677 6644</span></span>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <span class="contact-row-text">mail@alhughes.co.uk<br><span style="font-size:12px;color:var(--text-muted);">General enquiries</span></span>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+          <span class="contact-row-text">340 Streatham High Road<br>London, SW16 6HH</span>
+        </div>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">We do not accept service of documents by fax or email without prior arrangement. If calling from outside the UK, use (+44) 20 as the prefix.</p>
+      </div>
+      <div class="contact-right">
+        <div class="contact-form-row">
+          <div class="contact-form-group" style="margin-bottom:0"><label>Name</label><input type="text" placeholder="Your full name"></div>
+          <div class="contact-form-group" style="margin-bottom:0"><label>Email</label><input type="email" placeholder="Your email address"></div>
+        </div>
+        <div class="contact-form-group" style="margin-top:14px"><label>Subject / Service</label><input type="text" placeholder="e.g. Conveyancing enquiry"></div>
+        <div class="contact-form-group"><label>Message</label><textarea placeholder="Please describe your legal matter or question..."></textarea></div>
+        <button class="btn btn-gold btn-send">Send Enquiry →</button>
+        <p style="font-size:11.5px;color:var(--text-muted);margin-top:12px;">We aim to respond to all enquiries within one working day. Note: information provided here does not constitute legal advice and does not create a solicitor-client relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════ -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-icon-wrap">
+        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="6" width="44" height="56" rx="6" fill="var(--gold)" opacity=".95"/>
+          <rect x="20" y="20" width="24" height="4" rx="2" fill="var(--navy)" opacity=".7"/>
+          <rect x="20" y="29" width="18" height="3" rx="1.5" fill="var(--navy)" opacity=".5"/>
+          <rect x="20" y="37" width="14" height="3" rx="1.5" fill="var(--navy)" opacity=".5"/>
+          <circle cx="48" cy="52" r="12" fill="var(--navy-light)" stroke="var(--gold)" stroke-width="2"/>
+          <path d="M44 52l2.5 2.5 5-5" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="cta-text">
+        <h3>Speak directly with one of our qualified Solicitors</h3>
+        <p>No call centres, no junior staff — just experienced legal professionals ready to help. No obligation, transparent fees, and clear honest advice.</p>
+      </div>
+      <div class="cta-action">
+        <a href="tel:02087697100" class="btn btn-gold">Call 020 8769 7100 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <img src="https://nejyjogwbbubeqkrgqat.supabase.co/storage/v1/object/public/claudedrop-images/uploads/1777985594704_urfngic.png"
+             alt="A. L. Hughes &amp; Co." style="height:110px;width:auto;display:block;margin-bottom:14px;margin-top:-36px;mix-blend-mode:lighten;">
+        <p class="footer-desc-desktop">A trusted firm of Solicitors in Streatham, South London, established in 1950. Regulated by the Solicitors Regulation Authority. SRA ID: 51553.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#practice">Practice Areas</a></li>
+          <li><a href="#fees">Costs &amp; Fees</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#practice">Residential Conveyancing</a></li>
+          <li><a href="#practice">Commercial Property</a></li>
+          <li><a href="#practice">Wills &amp; Probate</a></li>
+          <li><a href="#practice">Powers of Attorney</a></li>
+          <li><a href="#practice">Planning Advice</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>020 8769 7100</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>mail@alhughes.co.uk</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>340 Streatham High Road<br>London SW16 6HH</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <p class="footer-copy">&copy; 2025 A. L. Hughes &amp; Co. Solicitors. All rights reserved. Regulated by the Solicitors Regulation Authority (SRA ID: 51553).</p>
+      <div class="footer-bot-links">
+        <a href="#privacy-policy" onclick="openModal('privacy')">Privacy Policy</a>
+        <a href="#client-info" onclick="openModal('clientinfo')">Client Information Notes</a>
+        <a href="https://www.sra.org.uk/consumers/problems/" target="_blank" rel="noopener">SRA</a>
+        <a href="https://www.legalombudsman.org.uk" target="_blank" rel="noopener">Legal Ombudsman</a>
+      </div>
+      <button class="footer-back-top" title="Back to top">
+        <svg viewBox="0 0 14 14"><path d="M7 11V3M3 7l4-4 4 4"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<!-- SRA strip -->
+<div class="sra-strip">
+  <p>A. L. Hughes &amp; Co. is regulated by the <a href="https://www.sra.org.uk/consumers/problems/" target="_blank" rel="noopener">Solicitors Regulation Authority</a> · SRA ID: 51553 · A list of partners can be inspected at our offices · We have one office only, in Streatham</p>
+</div>
+
+<!-- ════════════════════════════════════
+     LEGAL MODALS
+════════════════════════════════════ -->
+<style>
+.lmodal-overlay{
+  position:fixed;inset:0;z-index:9990;
+  background:rgba(10,22,40,.75);backdrop-filter:blur(4px);
+  display:flex;align-items:center;justify-content:center;
+  padding:16px;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease;
+}
+.lmodal-overlay.open{opacity:1;visibility:visible;}
+.lmodal{
+  background:var(--white);border-radius:18px;
+  width:100%;max-width:660px;max-height:88vh;
+  display:flex;flex-direction:column;overflow:hidden;
+  transform:translateY(24px);transition:transform .3s cubic-bezier(.22,1,.36,1);
+  box-shadow:0 40px 80px rgba(0,0,0,.35);
+}
+.lmodal-overlay.open .lmodal{transform:none;}
+.lmodal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 28px;border-bottom:1px solid var(--border);
+  background:var(--navy);flex-shrink:0;
+}
+.lmodal-head h2{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--white);}
+.lmodal-close{
+  width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.2);
+  background:transparent;cursor:pointer;color:rgba(255,255,255,.6);font-size:20px;
+  display:flex;align-items:center;justify-content:center;transition:background .2s;
+}
+.lmodal-close:hover{background:rgba(255,255,255,.1);color:var(--white);}
+.lmodal-body{overflow-y:auto;padding:28px;flex:1;}
+.lmodal-body h3{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--text-dark);margin:20px 0 8px;}
+.lmodal-body h3:first-child{margin-top:0;}
+.lmodal-body p{font-size:13.5px;line-height:1.8;color:var(--text-mid);margin-bottom:12px;}
+.lmodal-body ul{padding-left:20px;margin-bottom:12px;}
+.lmodal-body ul li{font-size:13.5px;line-height:1.8;color:var(--text-mid);margin-bottom:4px;}
+.lmodal-body a{color:var(--gold);text-decoration:underline;}
+.lmodal-gold-bar{height:3px;background:var(--gold);border-radius:0 0 18px 18px;flex-shrink:0;}
+@media(max-width:480px){
+  .lmodal-head{padding:18px 20px;}
+  .lmodal-body{padding:20px;}
+  .lmodal-head h2{font-size:18px;}
+}
+</style>
+
+<!-- Privacy Policy Modal -->
+<div class="lmodal-overlay" id="modal-privacy">
+  <div class="lmodal">
+    <div class="lmodal-head">
+      <h2>Privacy Policy</h2>
+      <button class="lmodal-close" onclick="closeModal('privacy')">✕</button>
+    </div>
+    <div class="lmodal-body">
+      <h3>Who We Are</h3>
+      <p>A. L. Hughes &amp; Co. Solicitors, 340 Streatham High Road, London SW16 6HH. We are regulated by the Solicitors Regulation Authority (SRA ID: 51553). Email: mail@alhughes.co.uk.</p>
+
+      <h3>Data We Collect</h3>
+      <p>We collect personal information that you provide when you contact us, instruct us in a matter, or use our website. This may include your name, address, email, telephone number, and information relevant to your legal matter.</p>
+
+      <h3>How We Use Your Data</h3>
+      <ul>
+        <li>To provide legal services and respond to your enquiries</li>
+        <li>To comply with our legal and regulatory obligations</li>
+        <li>To manage our client relationship and billing</li>
+        <li>To prevent fraud and money laundering (as required by law)</li>
+      </ul>
+
+      <h3>Cookies</h3>
+      <p>We do not believe there are any tracking cookies on this website, other than those potentially attached to the SRA badge. We do not track users of this site.</p>
+
+      <h3>Sharing Your Data</h3>
+      <p>We do not sell or pass your personal data to third parties for marketing purposes. We may share information where required by law, by a court order, or with third parties necessary to complete your legal matter (e.g. Land Registry, HMRC).</p>
+
+      <h3>Retention</h3>
+      <p>We retain client files in accordance with our professional obligations and the Solicitors Regulation Authority's requirements, typically for a minimum of six years after the conclusion of a matter.</p>
+
+      <h3>Your Rights</h3>
+      <p>Under UK GDPR, you have the right to access, correct, or request deletion of your personal data. To exercise these rights, please write to us at the address above or email mail@alhughes.co.uk.</p>
+
+      <h3>Contact</h3>
+      <p>For any privacy concerns, please contact us at: mail@alhughes.co.uk or 340 Streatham High Road, London SW16 6HH. Telephone: 020 8769 7100.</p>
+    </div>
+    <div class="lmodal-gold-bar"></div>
+  </div>
+</div>
+
+<!-- Client Information Notes Modal -->
+<div class="lmodal-overlay" id="modal-clientinfo">
+  <div class="lmodal">
+    <div class="lmodal-head">
+      <h2>Client Information Notes</h2>
+      <button class="lmodal-close" onclick="closeModal('clientinfo')">✕</button>
+    </div>
+    <div class="lmodal-body">
+      <h3>Our Terms of Business</h3>
+      <p>These notes set out the basis on which A. L. Hughes &amp; Co. provides legal services to clients. By instructing us you agree to these terms.</p>
+
+      <h3>Who Will Handle Your Matter</h3>
+      <p>All legal work is carried out by our qualified Solicitors — Laurence Mann and Frances Holton (Partners), and Norman Mann (Consultant, not taking new cases). You will be told who is handling your matter at the outset.</p>
+
+      <h3>Our Charges</h3>
+      <p>Our hourly rate for Conveyancing and Probate is <strong>£250 per hour + VAT at 20%</strong>, plus a small fraction of the property value (50p per £1,000 of price, and 25p per £1,000 of any mortgage). We will provide a written estimate at the start of any matter.</p>
+
+      <h3>Abortive Transactions</h3>
+      <p>If a transaction does not proceed to completion, we cap our fees at a maximum of 50% of the original estimate, or less if less work has been done.</p>
+
+      <h3>Disbursements</h3>
+      <p>Disbursements (search fees, Land Registry fees, Stamp Duty etc.) are passed on to you at cost. We will not incur any additional disbursement over £30 + VAT without your approval.</p>
+
+      <h3>Anti-Money Laundering</h3>
+      <p>By law, we are required to verify the identity of all clients. We use an electronic verification service (currently £10 per person including VAT). We may ask for additional documentation in some cases.</p>
+
+      <h3>Bank Details</h3>
+      <p>Our bank details were last changed in 2010. If you receive any communication purporting to change our bank details, this is a fraud — please contact us immediately on 020 8769 7100.</p>
+
+      <h3>Fraud Warning</h3>
+      <p>We have only one office, in Streatham. We are not operating from any other location. Any communication claiming to be from another office of ours should be treated as fraudulent.</p>
+
+      <h3>Complaints</h3>
+      <p>If you are unhappy with our service, please contact us at mail@alhughes.co.uk or in writing to 340 Streatham High Road, London SW16 6HH. We follow the Legal Ombudsman's complaints process. If unresolved, contact the Legal Ombudsman at <a href="https://www.legalombudsman.org.uk" target="_blank">www.legalombudsman.org.uk</a> or 0300 555 0333.</p>
+
+      <h3>Regulatory Information</h3>
+      <p>A. L. Hughes &amp; Co. is regulated by the Solicitors Regulation Authority. SRA ID: 51553. A list of partners can be inspected at our offices. Visit <a href="https://www.sra.org.uk/consumers/problems/" target="_blank">sra.org.uk</a> for information about the SRA and how to raise concerns about our behaviour.</p>
+    </div>
+    <div class="lmodal-gold-bar"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   1. PRELOADER
+══════════════════════════════════════════════════════════════ */
+(function(){
+  const pre    = document.getElementById('preloader');
+  const bar    = document.getElementById('preBar');
+  if(!pre || !bar) return;
+
+  function runBar(){
+    let pct = 0;
+    const iv = setInterval(() => {
+      pct = Math.min(pct + (Math.random() * 18 + 4), 100);
+      bar.style.width = pct + '%';
+      if(pct >= 100){
+        clearInterval(iv);
+        setTimeout(() => {
+          pre.classList.add('hidden');
+          document.querySelectorAll('.hero-img img').forEach((img, i) => {
+            setTimeout(() => img.classList.add('hi-visible'), i * 180);
+          });
+          setTimeout(() => {
+            document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible'));
+          }, 120);
+        }, 320);
+      }
+    }, 80);
+  }
+  setTimeout(runBar, 350);
+})();
+
+/* ══════════════════════════════════════════════════════════════
+   2. SCROLL PROGRESS BAR
+══════════════════════════════════════════════════════════════ */
+const pFill = document.getElementById('sprogress-fill');
+let progTicking = false;
+window.addEventListener('scroll', () => {
+  if(progTicking) return;
+  progTicking = true;
+  requestAnimationFrame(() => {
+    if(pFill){
+      const max = document.body.scrollHeight - window.innerHeight;
+      pFill.style.width = Math.min(window.scrollY / max * 100, 100) + '%';
+    }
+    progTicking = false;
+  });
+}, {passive: true});
+
+/* ══════════════════════════════════════════════════════════════
+   3. NAV SCROLL STATE
+══════════════════════════════════════════════════════════════ */
+const navEl = document.querySelector('.nav');
+let navTicking = false;
+window.addEventListener('scroll', () => {
+  if(navTicking) return;
+  navTicking = true;
+  requestAnimationFrame(() => {
+    if(navEl) navEl.classList.toggle('scrolled', window.scrollY > 60);
+    navTicking = false;
+  });
+}, {passive: true});
+
+/* ══════════════════════════════════════════════════════════════
+   4. SCROLL REVEAL
+══════════════════════════════════════════════════════════════ */
+function staggerReveal(selector, stepMs){
+  document.querySelectorAll(selector).forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = (i * stepMs / 1000).toFixed(2) + 's';
+  });
+}
+staggerReveal('.pcard', 110);
+staggerReveal('.wcard', 130);
+staggerReveal('.tmem',  120);
+staggerReveal('.faq-item', 110);
+staggerReveal('.fitem', 100);
+staggerReveal('.tcard', 100);
+
+function simpleReveal(selector){
+  document.querySelectorAll(selector).forEach(el => { el.classList.add('reveal'); el.style.transitionDelay = '0s'; });
+}
+['.practice-hdr','.team-hdr','.testi-hdr','.faq-hdr','.why-left','.why-grid','.features-left','.flist','.contact-left','.contact-right','.cta-box'].forEach(simpleReveal);
+
+document.querySelectorAll('.about-inner .pill-b, .about-inner h2, .about-inner .about-text').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = (i * 0.12).toFixed(2) + 's';
+});
+
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+  });
+}, { threshold: 0.07, rootMargin: '0px 0px -24px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => {
+  if(!el.closest('.hero')) revealObs.observe(el);
+});
+
+/* ══════════════════════════════════════════════════════════════
+   5. COUNTER ANIMATION
+══════════════════════════════════════════════════════════════ */
+const statDefs = [{t:3,s:''},{t:75,s:'+'},{t:8,s:''}];
+let counted = false;
+new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(!e.isIntersecting || counted) return;
+    counted = true;
+    document.querySelectorAll('.astat-value').forEach((el, i) => {
+      const {t, s} = statDefs[i] || {t:0, s:''};
+      let cur = 0;
+      const step = t / 60;
+      const iv = setInterval(() => {
+        cur = Math.min(cur + step, t);
+        el.textContent = Math.round(cur) + s;
+        if(cur >= t) clearInterval(iv);
+      }, 22);
+    });
+  });
+}, {threshold: 0.5}).observe(document.querySelector('.astat') || document.body);
+
+/* ══════════════════════════════════════════════════════════════
+   6. CURSOR GLOW
+══════════════════════════════════════════════════════════════ */
+const glowEl = document.getElementById('cglow');
+let glowOn = false;
+window.addEventListener('mousemove', e => {
+  if(window.innerWidth <= 768 || !glowEl) return;
+  glowEl.style.left = e.clientX + 'px';
+  glowEl.style.top  = e.clientY + 'px';
+  const inDark = ['.hero','#team','.faq'].some(sel => {
+    const sec = document.querySelector(sel);
+    if(!sec) return false;
+    const r = sec.getBoundingClientRect();
+    return e.clientY >= r.top && e.clientY <= r.bottom;
+  });
+  if(inDark !== glowOn){ glowOn = inDark; glowEl.style.opacity = inDark ? '1' : '0'; }
+}, {passive: true});
+
+/* ══════════════════════════════════════════════════════════════
+   7. BUTTON RIPPLE
+══════════════════════════════════════════════════════════════ */
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    const r = document.createElement('span');
+    r.className = 'ripple-el';
+    const rect = btn.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    r.style.cssText = [`width:${size}px`,`height:${size}px`,`left:${e.clientX-rect.left-size/2}px`,`top:${e.clientY-rect.top-size/2}px`].join(';');
+    btn.appendChild(r);
+    setTimeout(() => r.remove(), 650);
+  });
+});
+
+/* ══════════════════════════════════════════════════════════════
+   8. IMAGE FADE IN
+══════════════════════════════════════════════════════════════ */
+document.querySelectorAll('img').forEach(img => {
+  if(img.closest('.hero-img')) return;
+  img.classList.add('fi');
+  if(img.complete && img.naturalWidth > 0) img.classList.add('loaded');
+  else img.addEventListener('load', () => img.classList.add('loaded'));
+});
+
+/* ══════════════════════════════════════════════════════════════
+   9. BACK TO TOP
+══════════════════════════════════════════════════════════════ */
+const btBtn = document.querySelector('.footer-back-top');
+if(btBtn) btBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+/* ══════════════════════════════════════════════════════════════
+   10. FAQ ACCORDION
+══════════════════════════════════════════════════════════════ */
+function toggleFaq(btn){
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+/* ══════════════════════════════════════════════════════════════
+   11. MOBILE NAV DRAWER
+══════════════════════════════════════════════════════════════ */
+const burgerEl = document.getElementById('burger');
+const drawerEl = document.getElementById('drawer');
+burgerEl.addEventListener('click', () => {
+  const open = drawerEl.classList.toggle('is-open');
+  burgerEl.classList.toggle('is-open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+drawerEl.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    drawerEl.classList.remove('is-open');
+    burgerEl.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ══════════════════════════════════════════════════════════════
+   12. TESTIMONIALS SLIDER — RAF pixel scroll, infinite loop
+══════════════════════════════════════════════════════════════ */
+(function(){
+  const wrap  = document.querySelector('.testi-slider-wrap');
+  const track = document.getElementById('slider');
+  if(!wrap || !track) return;
+
+  const origCards = Array.from(track.children);
+  const N = origCards.length;
+  origCards.forEach(c => track.appendChild(c.cloneNode(true)));
+  origCards.forEach(c => track.appendChild(c.cloneNode(true)));
+
+  track.style.cssText = 'display:flex;transition:none;will-change:transform;backface-visibility:hidden;';
+
+  const isMob = () => window.innerWidth <= 768;
+  function cardWidth(){ return isMob() ? wrap.offsetWidth * 0.85 + 18 : wrap.offsetWidth * 0.47 + 18; }
+  function resizeCards(){
+    const cw = cardWidth() - 18;
+    Array.from(track.children).forEach(c => {
+      c.style.flex = `0 0 ${cw}px`; c.style.minWidth = `${cw}px`; c.style.maxWidth = `${cw}px`; c.style.marginRight = '18px';
+    });
+  }
+  resizeCards();
+
+  const DESK = 40; const MOB = 30;
+  let posX = 0, lastTs = null, paused = false, isDrag = false, dragX0 = 0, dragP0 = 0;
+
+  function loopW(){ return N * cardWidth(); }
+  function wrap_pos(p){ const lw = loopW(); return ((p % lw) + lw) % lw; }
+
+  function tick(ts){
+    if(!lastTs) lastTs = ts;
+    const dt = Math.min((ts - lastTs) / 1000, 0.05);
+    lastTs = ts;
+    if(!paused && !isDrag) posX = wrap_pos(posX + (isMob() ? MOB : DESK) * dt);
+    track.style.transform = `translateX(-${posX}px)`;
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  wrap.addEventListener('mouseenter', () => { paused = true; lastTs = null; });
+  wrap.addEventListener('mouseleave', () => { paused = false; lastTs = null; });
+
+  document.getElementById('tNext').addEventListener('click', () => { posX = wrap_pos(posX + cardWidth()); lastTs = null; });
+  document.getElementById('tPrev').addEventListener('click', () => { posX = wrap_pos(posX - cardWidth()); lastTs = null; });
+
+  wrap.addEventListener('mousedown', e => { isDrag = true; dragX0 = e.clientX; dragP0 = posX; wrap.style.cursor = 'grabbing'; e.preventDefault(); });
+  window.addEventListener('mousemove', e => { if(!isDrag) return; posX = wrap_pos(dragP0 + (dragX0 - e.clientX)); });
+  window.addEventListener('mouseup', () => { if(!isDrag) return; isDrag = false; wrap.style.cursor = 'grab'; lastTs = null; });
+
+  wrap.addEventListener('touchstart', e => { isDrag = true; dragX0 = e.touches[0].clientX; dragP0 = posX; }, {passive: true});
+  wrap.addEventListener('touchmove', e => { if(!isDrag) return; posX = wrap_pos(dragP0 + (dragX0 - e.touches[0].clientX)); }, {passive: true});
+  wrap.addEventListener('touchend', () => { isDrag = false; lastTs = null; });
+
+  let rzTimer;
+  window.addEventListener('resize', () => { clearTimeout(rzTimer); rzTimer = setTimeout(() => { resizeCards(); lastTs = null; }, 150); });
+})();
+
+/* ══════════════════════════════════════════════════════════════
+   13. SMOOTH SCROLL — all anchor links
+══════════════════════════════════════════════════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    // skip modals and empty hashes
+    if(!href || href === '#' || href.startsWith('#privacy') || href.startsWith('#client')) return;
+    const target = document.querySelector(href);
+    if(!target) return;
+    e.preventDefault();
+    const navH = document.querySelector('.nav')?.offsetHeight || 70;
+    const top = target.getBoundingClientRect().top + window.scrollY - navH - 12;
+    window.scrollTo({top, behavior:'smooth'});
+  });
+});
+
+/* ══════════════════════════════════════════════════════════════
+   14. LEGAL MODALS
+══════════════════════════════════════════════════════════════ */
+function openModal(id) {
+  const overlay = document.getElementById('modal-' + id);
+  if(overlay){ overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  return false;
+}
+function closeModal(id) {
+  const overlay = document.getElementById('modal-' + id);
+  if(overlay){ overlay.classList.remove('open'); document.body.style.overflow = ''; }
+}
+// Close on overlay click
+document.querySelectorAll('.lmodal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', function(e) {
+    if(e.target === this) {
+      this.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+});
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') {
+    document.querySelectorAll('.lmodal-overlay.open').forEach(o => {
+      o.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+});
+</script>
+</body>
+</html>
